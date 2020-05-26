@@ -17,3 +17,4 @@ Encryption any prx files for ofw, as firmware files, modules, games ...
 1. Highlight the digital code from the `kirk.c` and replace it with the `main.c`
 1. Highlight the digital code from the `DATA.c` and replace it with the `main.c`
 1. Compile the new PrxEncrypter with batch file `1 MAKE.BAT`, you have an encryptor to encrypt your decrypted file.
+1. You can use it in the attached to release `Example`, replace new PrxEncrypter in the `Example\tools` folder.
