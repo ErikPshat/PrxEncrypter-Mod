@@ -14,7 +14,7 @@ Encryption any prx files for ofw, as firmware files, modules, games ...
 1. Open the original PRX (~PSP) in the hex editor, highlight header 336 bytes (0x150)
 1. Select in the menu of the hex editor `File` -> `Export` -> `C` and save as `DATA.c`
 1. Now open `kirk.c` and `DATA.c` in Notepad++ and also open the `main.c` from source - you should see a similar section
-1. Highlight the digital code from the `kirk.c` and replace it with the `main.c`
-1. Highlight the digital code from the `DATA.c` and replace it with the `main.c`
+1. Highlight the digital code from the `kirk.c` and replace it with the `main.c` 272 bytes (0x110)
+1. Highlight the digital code from the `DATA.c` and replace it with the `main.c` 336 bytes (0x150)
 1. Compile the new PrxEncrypter with batch file `1 MAKE.BAT`, you have an encryptor to encrypt your decrypted file.
 1. You can use it in the attached to release `Example`, replace new PrxEncrypter in the `Example\tools` folder.
