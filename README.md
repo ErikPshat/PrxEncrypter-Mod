@@ -11,7 +11,7 @@ Encryption any prx files for ofw, as firmware files, modules, games ...
 1. Decrypt the original PRX file (DATA.PSP/EBOOT.BIN/MODULE.PRX) using PRXdecrypter_27a_fix_mod
 1. Open the obtained `kirk.16` (`kirk.144`) file in the hex editor, it takes exactly 272 bytes (0x110)
 1. Select in the menu of the hex editor `File` -> `Export` -> `C` and save as `kirk.c`
-1. Open the original PRX (~PSP) in the hex editor, highlight 336 bytes (0x150) and also...
+1. Open the original PRX (~PSP) in the hex editor, highlight header 336 bytes (0x150)
 1. Select in the menu of the hex editor `File` -> `Export` -> `C` and save as `DATA.c`
 1. Now open `kirk.c` and `DATA.c` in Notepad++ and also open the `main.c` from source - you should see a similar section
 1. Highlight the digital code from the `kirk.c` and replace it with the `main.c`
